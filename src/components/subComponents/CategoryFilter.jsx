@@ -53,7 +53,7 @@ const CategoryFilter = ({ onFilterChange }) => {
       {isOpen && (
         <div
           id="dropdown"
-          className="absolute z-50 w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700 top-[40%]"
+          className="absolute z-50 w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700 right-[28%]"
         >
           <h6 className="mb-3 text-sm font-medium text-gray-900 dark:text-white">
             Category
