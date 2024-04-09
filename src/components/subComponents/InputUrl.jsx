@@ -8,11 +8,11 @@ const InputUrl = ({ onApiUrlChange }) => {
  };
 
  return (
-    <form onSubmit={handleSubmit} className="relative rounded-3xl bg-black">
+    <form onSubmit={handleSubmit} className="relative rounded-3xl bg-black text-white">
       <input
         type="url"
         name="url"
-        className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+        className="peer block min-h-[auto] w-full rounded border-0 bg-black px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none text-white placeholder:text-white autofill:shadow-autofill peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
         id="exampleFormControlInputURL"
         placeholder="Ingrese la URL de la API"
       />

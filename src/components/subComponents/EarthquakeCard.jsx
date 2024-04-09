@@ -3,7 +3,7 @@ import React from "react";
 
 const EarthquakeCard = ({ earthquake, onSelect }) => {
   return (
-    <div onClick={onSelect} className="block rounded-2xl bg-white shadow-2xl dark:bg-neutral-700 text-center max-w-xs">
+    <div onClick={onSelect} className="block rounded-2xl bg-white hover:bg-blue-800 focus:outline-none focus:ring shadow-2xl dark:bg-neutral-700 text-center max-w-xs">
       <div className="border-b-2 border-neutral-100 px-6 py-4 dark:border-neutral-500">
         <h2 className="flex items-center justify-center text-neutral-500 dark:text-neutral-300">
           {earthquake.attributes.title}

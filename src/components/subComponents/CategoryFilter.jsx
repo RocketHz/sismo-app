@@ -56,7 +56,7 @@ const CategoryFilter = ({ onFilterChange }) => {
           className="absolute z-50 w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700 right-[28%]"
         >
           <h6 className="mb-3 text-sm font-medium text-gray-900 dark:text-white">
-            Category
+            Categoria
           </h6>
           <ul className="space-y-2 text-sm" aria-labelledby="dropdownDefault">
             {['md', 'ml', 'ms', 'mb', 'mw'].map((magType) => (
@@ -79,9 +79,9 @@ const CategoryFilter = ({ onFilterChange }) => {
             ))}
           </ul>
           <button onClick={applyFilters} className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
-            Apply Filters
+            Aplicar Filtros
           </button>
-          <button className="mt-4 bg-blue-50 hover:bg-blue-700 text-black font-bold py-1 px-4 rounded" onClick={() => onFilterChange('', setIsOpen(false))} >Reset Filter</button>
+          <button className="mt-4 bg-blue-50 hover:bg-blue-700 text-black font-bold py-1 px-4 rounded" onClick={() => onFilterChange('', setIsOpen(false))} >Restaurar</button>
         </div>
       )}
     </div>
