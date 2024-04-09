@@ -33,7 +33,7 @@ const CategoryFilter = ({ onFilterChange }) => {
         type="button"
         onClick={toggleMenu}
       >
-        Filter by category
+        Categorias
         <svg
           className="w-4 h-4 ml-2"
           aria-hidden="true"
@@ -53,7 +53,7 @@ const CategoryFilter = ({ onFilterChange }) => {
       {isOpen && (
         <div
           id="dropdown"
-          className="z-50 w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700"
+          className="absolute z-50 w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700 top-[40%]"
         >
           <h6 className="mb-3 text-sm font-medium text-gray-900 dark:text-white">
             Category
