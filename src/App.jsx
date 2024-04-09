@@ -17,6 +17,12 @@ export default function App() {
     setSelectedEarthquake(earthquake);
   };
 
+  const [comments, setComments] = useState([]);
+
+const updateComments = (newComment) => {
+ setComments([...comments, newComment]);
+};
+
   return (
     <main className="bg-sky-500">
       <Navbar onApiUrlChange={handleApiUrlChange} />
@@ -24,6 +30,11 @@ export default function App() {
       <Map
         latitude={selectedEarthquake?.attributes.coordinates.latitude}
         longitude={selectedEarthquake?.attributes.coordinates.longitude}
+        info={selectedEarthquake?.attributes}
+        links={selectedEarthquake?.links.external_url}
+        comments={selectedEarthquake?.attributes.comments}
+        apiUrl={apiUrl}
+        updateComments={updateComments}
         className="mb-4"
       />
 

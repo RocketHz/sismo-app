@@ -30,10 +30,10 @@ const EarthquakeCard = ({ earthquake, onSelect }) => {
         </a>
         <div className="border-t-2 border-neutral-100 px-6 py-4 dark:border-neutral-500">
           <p className="flex items-center justify-center text-neutral-500 dark:text-neutral-300 flex-col">
-            <div className="">
+            <a className="">
               <span className="inline-block whitespace-nowrap rounded-[0.27rem] bg-gray-100 px-[0.65em] pb-[0.25em] pt-[0.35em] text-center align-baseline text-[0.75em] font-bold leading-none text-gray-700">Coordenadas:</span> <span className="ml-2">{earthquake.attributes.coordinates.latitude}</span>,
               <span className="ml-2">{earthquake.attributes.coordinates.longitude}</span>
-            </div>
+            </a>
           </p>
         </div>
       </div>
